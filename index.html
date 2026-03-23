@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Darlan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="content-section">
+            <h1>Sobre mim</h1>
+            <p>Olá, eu sou o Darlan. Atualmente trabalho na Clique Retire, focando no desenvolvimento de sistemas internos e infraestrutura. Gosto de resolver problemas lógicos e criar arquiteturas que facilitem o dia a dia das operações.</p>
+            <p>Nas horas vagas, sou um grande entusiasta de Realidade Virtual, dividindo meu tempo entre o headset e os projetos de final de semana, como a montagem do meu próprio cockpit para simuladores de corrida. Também gosto de acompanhar séries de ficção científica e jogos de estratégia e construção.</p>
+        </section>
+
+        <section id="formacao" class="content-section">
+                    <h1>Formação e Habilidades</h1>
+                    <ul>
+                        <li><strong>Ensino Superior:</strong> Cursando CST em Análise e Desenvolvimento de Sistemas pela UNINTER.</li>
+                        <li><strong>Infraestrutura e Cloud:</strong> Experiência prática com gestão de domínios, hospedagem e configuração de servidores utilizando o ecossistema AWS.</li>
+                        <li><strong>Banco de Dados e Dados Analíticos:</strong> Modelagem, consultas e consumo de dados utilizando MySQL para a construção de painéis e Dashboards focados em métricas de negócio e SAC.</li>
+                        <li><strong>Desenvolvimento e Arquitetura:</strong> Estruturação de regras de negócio e arquitetura de projetos utilizando formatos como JSON e Markdown para guiar desenvolvimentos complexos. Experiência com plataformas low-code/no-code como Antigravity e lovable.</li>
+                        <li><strong>Idiomas:</strong> Português (Nativo) e Inglês (Técnico, voltado para leitura de documentações e fóruns de tecnologia).</li>
+                    </ul>
+        </section>
+
+        <section id="portfolio" class="content-section">
+            <h1>Portfólio</h1>
+            <p>Abaixo estão os principais sistemas e arquiteturas que venho desenvolvendo:</p>
+            <div class="portfolio-grid">
+                <div class="card">
+                    <h3>Sistema Observer</h3>
+                    <p>Plataforma focada na centralização de visitas técnicas, controle de manutenção e gerenciamento do status de lockers ativos.</p>
+                </div>
+                <div class="card">
+                    <h3>Dashboards SAC</h3>
+                    <p>Painéis de análise de dados construídos com MySQL e Antigravity, estruturando informações detalhadas (incluindo parâmetros de ebox, Estado, UF e CEP) para otimização das métricas de atendimento.</p>
+                </div>
+                <div class="card">
+                    <h3>DNA do Projeto</h3>
+                    <p>Sistema desenvolvido para gerar arquivos estruturados (JSON/Markdown) que definem a arquitetura e as regras de negócio de aplicações, servindo como guia preciso para o desenvolvimento assistido por IA e prevenindo alucinações.</p>
+                </div>
+                <div class="card">
+                    <h3>App Gestão de Clusters</h3>
+                    <p>Aplicativo voltado para operadores de campo, com fluxos de prevenção de duplicidade, que permite a criação e o gerenciamento de clusters de lockers através da leitura de QR Codes de patrimônio.</p>
+                </div>
+                <div class="card">
+                    <h3>Infraestrutura Cloud</h3>
+                    <p>Gestão de domínios (intgen.com.br) e configuração de ambientes na AWS, operando instâncias EC2, roteamento com Route 53 e gerenciamento de certificados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="content-section">
+            <h1>Contato</h1>
+            <p>Ficou interessado no meu trabalho? Me envie uma mensagem!</p>
+            
+            <form id="formContato">
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="usuario@dominio.com">
+                </div>
+                
+                <div class="input-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Darlan. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
