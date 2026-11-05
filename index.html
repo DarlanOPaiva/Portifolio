@@ -1,109 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Darlan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Darlan Paiva</title>
+  <meta name="description" content="Darlan Paiva constrói agentes de IA e sistemas que tiram o trabalho manual da operação.">
+  <meta property="og:title" content="Darlan Paiva">
+  <meta property="og:description" content="Se alguém faz na mão todo dia, eu transformo em sistema.">
+  <meta property="og:image" content="https://portifolio-darlan.intgen.com.br/img/despacha.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%2317191d'/%3E%3Crect x='7' y='6' width='18' height='20' rx='2' fill='%23ffb01f'/%3E%3Ccircle cx='21' cy='16' r='2' fill='%2317191d'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="faixa" aria-hidden="true"></div>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="topo">
+    <a class="marca" href="#inicio">Darlan Paiva</a>
+    <nav aria-label="Seções">
+      <a href="#clique">Clique Retire</a>
+      <a href="#proprios">Projetos</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-    <main>
-        <section id="sobre" class="content-section">
-            <h1>Sobre mim</h1>
-            <p>Olá, eu sou o Darlan. Atualmente trabalho na Clique Retire, atuando no desenvolvimento de sistemas internos, infraestrutura cloud e arquitetura de soluções. Meu foco é resolver problemas complexos e criar ferramentas escaláveis que otimizem o dia a dia das operações logísticas e de atendimento.</p>
-            <p>Nas horas vagas, sou um entusiasta de hardware e Realidade Virtual. Gosto de aplicar minha lógica de programação em projetos "mão na massa", como a montagem e configuração do meu próprio cockpit para simuladores de corrida, além de aproveitar o tempo livre com jogos de estratégia e séries de ficção científica.</p>
-        </section>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-texto">
+        <p class="etiqueta">Automação e IA · São Paulo</p>
+        <h1>Se alguém faz na mão todo dia, eu transformo em sistema.</h1>
+        <p class="lead">Construo agentes de IA e sistemas para quem opera no mundo real: lockers, entregas, atendimento. Do problema ao deploy.</p>
+        <a class="botao" href="#clique">Abrir os projetos</a>
+      </div>
 
-        <section id="formacao" class="content-section">
-            <h1>Formação e Habilidades</h1>
-            <ul>
-                <li><strong>Ensino Superior:</strong> Cursando CST em Análise e Desenvolvimento de Sistemas pela UNINTER.</li>
-                <li><strong>Infraestrutura e Cloud:</strong> Experiência prática com gestão de domínios, hospedagem e configuração de servidores utilizando o ecossistema AWS (instâncias EC2, Route 53 e Certificate Manager).</li>
-                <li><strong>Banco de Dados e Dados Analíticos:</strong> Modelagem, consultas e consumo de dados utilizando MySQL para a construção de painéis e Dashboards focados em métricas de negócio.</li>
-                <li><strong>Desenvolvimento e Arquitetura:</strong> Estruturação de regras de negócio e arquitetura de projetos utilizando formatos como JSON e Markdown para guiar desenvolvimentos. Experiência com plataformas como Antigravity.</li>
-                <li><strong>Idiomas:</strong> Português (Nativo) e Inglês (Técnico, focado em documentações e fóruns de tecnologia).</li>
-            </ul>
-        </section>
+      <div class="parede" aria-label="Atalhos para os projetos">
+        <a class="porta" href="#lia">
+          <span class="interior">Atende cliente de verdade</span>
+          <span class="folha"><b class="num">01</b><i class="led"></i><strong>Lia</strong><small>Agente de IA</small></span>
+        </a>
+        <a class="porta" href="#kx">
+          <span class="interior">Dúvida vira FAQ</span>
+          <span class="folha"><b class="num">02</b><i class="led"></i><strong>KX</strong><small>Base viva</small></span>
+        </a>
+        <a class="porta" href="#sla">
+          <span class="interior">Prazo sem planilha</span>
+          <span class="folha"><b class="num">03</b><i class="led"></i><strong>SLA</strong><small>Logística</small></span>
+        </a>
+        <a class="porta" href="#tuca">
+          <span class="interior">Um tucano que cobra</span>
+          <span class="folha"><b class="num">04</b><i class="led"></i><strong>Tuca</strong><small>App Android</small></span>
+        </a>
+        <a class="porta" href="#despacha">
+          <span class="interior">Jogue agora</span>
+          <span class="folha"><b class="num">05</b><i class="led"></i><strong>Despacha!</strong><small>Jogo 3D</small></span>
+        </a>
+        <a class="porta" href="#fora">
+          <span class="interior">Cockpit e VR</span>
+          <span class="folha"><b class="num">06</b><i class="led"></i><strong>Fora do expediente</strong></span>
+        </a>
+      </div>
+    </section>
 
-        <section id="portfolio" class="content-section">
-            <h1>Portfólio</h1>
-            <p>Abaixo estão os principais sistemas e aplicativos da minha esteira de desenvolvimento, categorizados pelo seu estágio atual:</p>
-            <div class="portfolio-grid">
-                
-                <div class="card">
-                    <h3>Observer (Live)</h3>
-                    <p>Plataforma ativa focada na centralização de visitas técnicas, controle de manutenção e gerenciamento do status da operação.</p>
-                </div>
+    <section class="numeros" aria-label="Resultados">
+      <div><strong>9% → 23,7%</strong><span>resolução da Lia, de junho a outubro de 2026</span></div>
+      <div><strong>horas → ~10 min</strong><span>para um locker offline voltar sozinho</span></div>
+      <div><strong>3–7 s → &lt;100 ms</strong><span>consulta de SLA, depois de sair do Excel</span></div>
+      <div><strong>1.300+ testes</strong><span>automatizados no app Tuca</span></div>
+    </section>
 
-                <div class="card">
-                    <h3>Sistema SLA Logística (Deploy)</h3>
-                    <p>Sistema e dashboards focados no monitoramento rigoroso de SLAs logísticos, englobando as etapas cruciais de SEND, DELIVERY e RETURN.</p>
-                </div>
+    <section class="bloco" id="clique">
+      <header class="bloco-topo">
+        <p class="etiqueta">Na Clique Retire · desde 2023</p>
+        <h2>Sistemas que rodam na operação, não em slide.</h2>
+      </header>
 
-                <div class="card">
-                    <h3>MonitorCPE & Unidade (The Brain Stem)</h3>
-                    <p>Sistemas de monitoramento. O MonitorCPE já atua em produção (Live), enquanto a nova evolução da arquitetura (Unidade) encontra-se em desenvolvimento ativo.</p>
-                </div>
+      <article class="projeto destaque" id="lia">
+        <div class="ficha"><span class="num-tag">01</span><span class="status">Em produção</span></div>
+        <div class="corpo">
+          <h3>Lia</h3>
+          <p class="sub">A agente de IA que atende os clientes no WhatsApp e no chat.</p>
+          <p>Bot ruim inventa resposta. A Lia conversa sem menu numérico, responde com o conhecimento oficial da empresa e resolve o que dá para resolver. Quando fica em dúvida, pergunta. Quando não consegue, chama uma pessoa.</p>
+          <ol class="fluxo" aria-label="Como a Lia atende">
+            <li><b>Cliente escreve</b><span>WhatsApp ou chat</span></li>
+            <li><b>Triagem com IA</b><span>Entende o objetivo</span></li>
+            <li><b>Age</b><span>Responde com RAG, rastreia pedido, reenvia código</span></li>
+            <li class="fim"><b>Resolve</b><span>ou transfere para um humano na hora certa</span></li>
+          </ol>
+          <ul class="stack"><li>Gemini</li><li>RAG</li><li>pgvector</li><li>Supabase</li><li>Node.js</li><li>Docker</li></ul>
+        </div>
+        <figure class="grafico" id="grafico-lia">
+          <figcaption><b>Cada vez mais conversas resolvidas sem humano</b><span>Resolução da Lia por mês, em 2026</span></figcaption>
+          <div class="plot">
+            <svg viewBox="0 0 480 270" role="img" aria-label="Linha da taxa de resolução da Lia: 9,0% em junho, 8,9% em julho, 17,6% em agosto, 17,0% em setembro, 23,7% em outubro e 30,9% na parcial de novembro.">
+              <g class="grade">
+                <line x1="44" x2="470" y1="24" y2="24"/><line x1="44" x2="470" y1="75.5" y2="75.5"/><line x1="44" x2="470" y1="127" y2="127"/><line x1="44" x2="470" y1="178.5" y2="178.5"/><line class="base" x1="44" x2="470" y1="230" y2="230"/>
+              </g>
+              <g class="eixo">
+                <text x="36" y="29" text-anchor="end">40%</text><text x="36" y="80.5" text-anchor="end">30%</text><text x="36" y="132" text-anchor="end">20%</text><text x="36" y="183.5" text-anchor="end">10%</text><text x="36" y="235" text-anchor="end">0%</text>
+                <text x="56" y="258" text-anchor="middle">jun</text><text x="136" y="258" text-anchor="middle">jul</text><text x="216" y="258" text-anchor="middle">ago</text><text x="296" y="258" text-anchor="middle">set</text><text x="376" y="258" text-anchor="middle">out</text><text x="456" y="258" text-anchor="middle">nov*</text>
+              </g>
+              <line class="mira" x1="0" x2="0" y1="24" y2="230"/>
+              <polyline class="serie" points="56,183.65 136,184.2 216,139.4 296,142.5 376,107.9"/>
+              <line class="serie parcial" x1="376" y1="107.9" x2="456" y2="70.9"/>
+              <g class="pontos">
+                <circle cx="56" cy="183.65" r="5"/><circle cx="136" cy="184.2" r="5"/><circle cx="216" cy="139.4" r="5"/><circle cx="296" cy="142.5" r="5"/><circle cx="376" cy="107.9" r="5"/><circle class="aberto" cx="456" cy="70.9" r="5"/>
+              </g>
+              <g class="rotulos">
+                <text x="56" y="168" text-anchor="middle">9,0%</text><text x="376" y="92" text-anchor="end">23,7%</text><text x="470" y="52" text-anchor="end">30,9%</text>
+              </g>
+              <g class="alvos">
+                <rect x="16" y="24" width="80" height="206" data-mes="Junho" data-valor="9,0%" data-x="56"/><rect x="96" y="24" width="80" height="206" data-mes="Julho" data-valor="8,9%" data-x="136"/><rect x="176" y="24" width="80" height="206" data-mes="Agosto" data-valor="17,6%" data-x="216"/><rect x="256" y="24" width="80" height="206" data-mes="Setembro" data-valor="17,0%" data-x="296"/><rect x="336" y="24" width="80" height="206" data-mes="Outubro" data-valor="23,7%" data-x="376"/><rect x="416" y="24" width="64" height="206" data-mes="Novembro (parcial)" data-valor="30,9%" data-x="456"/>
+              </g>
+            </svg>
+            <div class="dica" hidden></div>
+          </div>
+          <p class="nota">* Parcial, até 05/11. Um LLM avalia cada conversa; as descartáveis ficam fora da conta.</p>
+          <details>
+            <summary>Ver em tabela</summary>
+            <table>
+              <thead><tr><th scope="col">Mês</th><th scope="col">Resolução</th></tr></thead>
+              <tbody><tr><td>Junho</td><td>9,0%</td></tr><tr><td>Julho</td><td>8,9%</td></tr><tr><td>Agosto</td><td>17,6%</td></tr><tr><td>Setembro</td><td>17,0%</td></tr><tr><td>Outubro</td><td>23,7%</td></tr><tr><td>Novembro (parcial)</td><td>30,9%</td></tr></tbody>
+            </table>
+          </details>
+        </figure>
+      </article>
 
-                <div class="card">
-                    <h3>Ecossistema Mobile & Checkin</h3>
-                    <p>Aplicações voltadas para a ponta da operação. Inclui o sistema de Checkin (Live) e os apps Vision Mobile, MoviCheck e Lookme (atualmente em fase de Revisão/Aprovação).</p>
-                </div>
+      <div class="dupla">
+        <article class="projeto" id="kx">
+          <div class="ficha"><span class="num-tag">02</span><span class="status">Em produção</span></div>
+          <h3>KX</h3>
+          <p class="sub">A base de conhecimento que não envelhece sozinha.</p>
+          <p>Busca semântica, RAG e classificação automática de FAQs. A pergunta que ninguém soube responder vira fila, é agrupada por tema, ganha prioridade por ocorrências e votos e termina como FAQ publicada.</p>
+          <ul class="stack"><li>React</li><li>TypeScript</li><li>Supabase</li><li>OpenAI</li><li>Embeddings</li></ul>
+        </article>
 
-                <div class="card">
-                    <h3>KX Knowledge Exchange (Live)</h3>
-                    <p>Plataforma ativa de troca de conhecimento e documentação, operando de forma independente dos sistemas de logística corporativa.</p>
-                </div>
+        <article class="projeto" id="sla">
+          <div class="ficha"><span class="num-tag">03</span><span class="status">Em produção</span></div>
+          <h3>Sistema de SLA</h3>
+          <p class="sub">Cada entrega contra o prazo certo, sem planilha.</p>
+          <p>Motor de regras por região, tipo de empresa e sazonalidade, com dashboard, mais de 15 endpoints REST e edição de regras pela web. Mudou a regra? Não precisa de novo deploy.</p>
+          <ul class="stack"><li>Python</li><li>Flask</li><li>SQLAlchemy</li><li>pandas</li></ul>
+        </article>
+      </div>
 
-                <div class="card">
-                    <h3>QAmulti (Deploy)</h3>
-                    <p>Ferramenta focada em garantia de qualidade e fluxos de múltiplos testes, com funcionalidades pendentes de publicação em produção.</p>
-                </div>
+      <div class="tambem">
+        <h3>Também rodando por lá</h3>
+        <ul>
+          <li><b>Dashboard financeiro</b> com detecção de padrões de fraude</li>
+          <li><b>Monitor de conectividade</b> que recupera o locker sem ninguém encostar</li>
+          <li><b>Extensão Chrome</b> que mostra o mapa completo do locker</li>
+          <li><b>Quiosque multi-monitor</b> com dashboards 24/7 em 4 telas</li>
+          <li><b>App Flutter</b> de inventário em campo, com QR Code e modo offline</li>
+        </ul>
+      </div>
+    </section>
 
-            </div>
-        </section>
+    <section class="bloco escuro" id="proprios">
+      <header class="bloco-topo">
+        <p class="etiqueta">Depois do expediente</p>
+        <h2>O que eu construo porque quero.</h2>
+      </header>
 
-        <section id="contato" class="content-section">
-            <h1>Contato</h1>
-            <p>Ficou interessado no meu trabalho? Me envie uma mensagem!</p>
-            
-            <form id="formContato">
-                <div class="input-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
-                </div>
-                
-                <div class="input-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="usuario@dominio.com">
-                </div>
-                
-                <div class="input-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
-                </div>
-                
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </section>
-    </main>
+      <article class="produto" id="tuca">
+        <div class="produto-img creme">
+          <img src="img/tuca-figurinos.png" width="1000" height="957" loading="lazy" alt="O mascote Tuca, um tucano, em quatro figurinos: militar, consultora, secretária e avó.">
+        </div>
+        <div class="produto-texto">
+          <span class="num-tag">04</span>
+          <h3>Tuca</h3>
+          <p class="sub">Um tucano que te cutuca até você fazer.</p>
+          <p>App Android que organiza a rotina com alarmes, sequências e 5 personalidades, do general à vó. A IA escreve briefings e a análise da semana, e ainda tem prática de inglês com correção palavra por palavra.</p>
+          <p>Aqui eu fui o diretor de produto, e o Claude Code escreveu o código: 486 commits em 13 dias. Em teste fechado na Play Store.</p>
+          <ul class="stack"><li>Kotlin</li><li>Jetpack Compose</li><li>Cloudflare Workers</li><li>API do Claude</li></ul>
+        </div>
+      </article>
 
-    <footer>
-        <p>&copy; 2026 Darlan. Todos os direitos reservados.</p>
-    </footer>
+      <article class="produto invertido" id="despacha">
+        <a class="produto-img" href="https://despacha.heados.com.br" target="_blank" rel="noopener">
+          <img src="img/despacha.jpg" width="1568" height="541" loading="lazy" alt="Tela do jogo Despacha!: um galpão de logística em 3D isométrico no meio de uma cidade à noite.">
+        </a>
+        <div class="produto-texto">
+          <span class="num-tag">05</span>
+          <h3>Despacha!</h3>
+          <p class="sub">Comece de motoboy. Termine com um império logístico.</p>
+          <p>Jogo idle em 3D que roda no navegador. Levei para o jogo o mundo que eu já conheço do trabalho. Robôs simulam partidas inteiras para medir o ritmo, e cada item novo entra como dado, sem gambiarra no código.</p>
+          <ul class="stack"><li>TypeScript</li><li>Three.js</li><li>Cloudflare Workers</li><li>D1</li><li>Claude Code</li></ul>
+          <a class="botao" href="https://despacha.heados.com.br" target="_blank" rel="noopener">Jogar agora</a>
+        </div>
+      </article>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="bloco" id="trajetoria">
+      <header class="bloco-topo">
+        <p class="etiqueta">Trajetória</p>
+        <h2>Comecei atendendo chamado. Hoje construo o que atende o chamado.</h2>
+      </header>
+      <ol class="linha">
+        <li><time>2024 – hoje</time><b>Especialista em Automação</b><span>Clique Retire</span></li>
+        <li><time>2023 – 2024</time><b>Analista de Suporte Técnico</b><span>Clique Retire</span></li>
+        <li><time>2019 – 2024</time><b>Suporte de infraestrutura e sistemas</b><span>Volarehost, como autônomo</span></li>
+        <li><time>2025 – 2027</time><b>CST em Análise e Desenvolvimento de Sistemas</b><span>UNINTER, em andamento</span></li>
+      </ol>
+    </section>
+
+    <section class="bloco fora" id="fora">
+      <span class="num-tag">06</span>
+      <h2>Fora do expediente</h2>
+      <p class="lead">Monto e configuro meu próprio cockpit de simulador de corrida. Gosto de hardware, realidade virtual, jogos de estratégia e séries de ficção científica.</p>
+      <blockquote>“Erre pequeno, erre barato.”<cite>A regra que eu levo para qualquer projeto</cite></blockquote>
+    </section>
+
+    <section class="bloco contato" id="contato">
+      <h2>Tem um processo que ninguém aguenta mais?</h2>
+      <p class="lead">Me conta. A conversa mais rápida é pelo LinkedIn.</p>
+      <div class="acoes">
+        <a class="botao grande" href="https://www.linkedin.com/in/darlan-paiva-803057165" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="botao vazado grande" href="https://github.com/DarlanOPaiva" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>Darlan Paiva · 2026</span>
+    <a href="#inicio">Voltar ao topo</a>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

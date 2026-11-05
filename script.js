@@ -1,29 +1,32 @@
-// Captura o evento de envio do formulário
-document.getElementById('formContato').addEventListener('submit', function(event) {
-    // Evita que a página seja recarregada ao enviar o form
-    event.preventDefault();
+// Tooltip e linha de mira do gráfico da Lia.
+const grafico = document.getElementById('grafico-lia');
 
-    // Captura os valores digitados nos campos
-    const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const mensagem = document.getElementById('mensagem').value.trim();
+if (grafico) {
+  const plot = grafico.querySelector('.plot');
+  const mira = grafico.querySelector('.mira');
+  const dica = grafico.querySelector('.dica');
 
-    // Validação 1: Verifica se os campos não estão em branco
-    if (nome === '' || email === '' || mensagem === '') {
-        alert('Por favor, preencha todos os campos obrigatórios antes de enviar.');
-        return; // Interrompe a execução se houver erro
-    }
+  grafico.querySelectorAll('.alvos rect').forEach((alvo) => {
+    alvo.addEventListener('pointerenter', () => {
+      const x = alvo.dataset.x;
+      mira.setAttribute('x1', x);
+      mira.setAttribute('x2', x);
 
-    // Validação 2: Verifica o formato do e-mail usando Expressão Regular (Regex)
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Por favor, insira um endereço de e-mail válido (ex: usuario@dominio.com).');
-        return;
-    }
+      dica.textContent = '';
+      const mes = document.createElement('span');
+      mes.textContent = alvo.dataset.mes;
+      const valor = document.createElement('b');
+      valor.textContent = alvo.dataset.valor;
+      dica.append(mes, valor);
+      dica.style.left = `${(Number(x) / 480) * 100}%`;
+      dica.classList.toggle('a-esquerda', Number(x) > 340);
+      dica.hidden = false;
+      plot.classList.add('ativo');
+    });
+  });
 
-    // Simulação de envio bem-sucedido
-    alert('Mensagem enviada com sucesso! Obrigado pelo contato, ' + nome + '.');
-
-    // Limpa os campos do formulário após o "envio"
-    document.getElementById('formContato').reset();
-});
+  plot.addEventListener('pointerleave', () => {
+    dica.hidden = true;
+    plot.classList.remove('ativo');
+  });
+}
