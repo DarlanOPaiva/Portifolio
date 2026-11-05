@@ -115,7 +115,6 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sinal); outlin
   padding: 12px;
   background: #0c0d0f;
   border-radius: 8px;
-  perspective: 1100px;
 }
 .porta {
   position: relative;
@@ -132,7 +131,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sinal); outlin
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px 10px 10px 34%;
+  padding: 10px 10px 10px 26%;
   color: var(--sinal);
   font: 500 0.78rem/1.3 "IBM Plex Mono", monospace;
   text-align: right;
@@ -147,6 +146,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sinal); outlin
   background: linear-gradient(145deg, var(--locker-2), var(--locker));
   box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08);
   color: var(--locker-tinta);
+  transform: perspective(800px) rotateY(0deg);
   transform-origin: left center;
   transition: transform 0.45s cubic-bezier(0.3, 0.9, 0.3, 1);
   backface-visibility: hidden;
@@ -172,7 +172,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sinal); outlin
 .folha strong { margin-top: auto; font-size: clamp(1.05rem, 2vw, 1.5rem); font-stretch: 85%; font-weight: 800; line-height: 1.05; overflow-wrap: anywhere; }
 .folha small { margin-top: 4px; font-size: 0.8rem; color: var(--locker-muda); }
 @media (hover: hover) {
-  .porta:hover .folha, .porta:focus-visible .folha { transform: rotateY(-62deg); }
+  .porta:hover .folha, .porta:focus-visible .folha { transform: perspective(800px) rotateY(-82deg); }
 }
 
 .numeros {
