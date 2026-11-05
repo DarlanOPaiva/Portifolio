@@ -285,6 +285,7 @@ th:last-child, td:last-child { text-align: right; }
 .produto-img.creme img { width: min(440px, 100%); margin-inline: auto; }
 .invertido .produto-img img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform 0.4s ease; }
 .invertido .produto-img:hover img { transform: scale(1.03); }
+#alunodez .produto-img img { aspect-ratio: auto; }
 
 .linha { list-style: none; margin: 0; padding: 0; }
 .linha li { display: grid; grid-template-columns: 150px 1.4fr 1fr; gap: 4px 20px; padding-block: 16px; border-top: 1px solid var(--linha); align-items: baseline; }
